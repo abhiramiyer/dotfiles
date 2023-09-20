@@ -1,0 +1,24 @@
+[credential "https://github.com"]
+  helper = !/usr/bin/gh auth git-credential
+[user]
+  email = 16094597+abhiramiyer@users.noreply.github.com
+  name = abhiram
+[init]
+  defaultBranch = main
+[alias]
+  ci = commit -v
+  cm = commit -m
+  st = status
+  sb = status -sb
+  co = checkout
+  ll = log --oneline
+  last = log -1 HEAD --stat
+  rv = remote -v
+  d = diff
+  ds = diff --staged
+  br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  lp = log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+[pull]
+  rebase = true
+[rerere]
+  enabled = true
