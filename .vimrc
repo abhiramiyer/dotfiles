@@ -10,11 +10,11 @@ endif
 source $VIMRUNTIME/defaults.vim
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup    " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file (restore to previous version)
+  set backup    " keep a backup file (restore to previous version)
   if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
+    set undofile  " keep an undo file (undo changes after closing)
   endif
 endif
 
@@ -40,3 +40,33 @@ augroup END
 if has('syntax') && has('eval')
   packadd! matchit
 endif
+
+" Leader
+let mapleader = " "
+
+" Enable line numbers
+set number
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Tabs and spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Use one space, not two, after a '.', '?' and '!' with a join command
+set nojoinspaces
+
+" Search settings
+set ignorecase
+set smartcase
+nnoremap <C-l> :nohlsearch<CR><C-l> 
+
+" Some options to experiment with
+" set cursorline
+" set autoread
