@@ -118,3 +118,8 @@ fi
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+if [ -f "$HOME/.bashrc.local" ] ; then
+    source "$HOME/.bashrc.local"
+fi
+
