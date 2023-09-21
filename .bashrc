@@ -119,6 +119,9 @@ fi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# use vi mode for line editing
+set -o vi
+
 if [ -f "$HOME/.bashrc.local" ] ; then
     source "$HOME/.bashrc.local"
 fi
