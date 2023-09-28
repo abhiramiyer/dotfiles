@@ -41,6 +41,18 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+" Download and install vim-plug if it's not present
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Add plugins
+call plug#begin()
+" After updating this list, run :source % followed by :PlugInstall
+call plug#end()
+
 " Leader
 let mapleader = " "
 
@@ -65,8 +77,9 @@ set nojoinspaces
 " Search settings
 set ignorecase
 set smartcase
-nnoremap <C-l> :nohlsearch<CR><C-l> 
+nnoremap <C-l> :nohlsearch<CR><C-l>
 
 " Some options to experiment with
 " set cursorline
 " set autoread
+
