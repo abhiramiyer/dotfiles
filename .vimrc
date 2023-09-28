@@ -51,6 +51,8 @@ endif
 " Add plugins
 call plug#begin()
 " After updating this list, run :source % followed by :PlugInstall
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " Leader
