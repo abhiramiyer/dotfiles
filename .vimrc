@@ -53,7 +53,12 @@ call plug#begin()
 " After updating this list, run :source % followed by :PlugInstall
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
+
+" Set solarized dark colorscheme
+set background=dark
+colorscheme solarized
 
 " Leader
 let mapleader = " "
