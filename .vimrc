@@ -54,11 +54,20 @@ call plug#begin()
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Set solarized dark colorscheme
 set background=dark
 colorscheme solarized
+
+" vim-airline settings
+let g:airline_theme='<theme>'
+" Automatically display all buffers when there's only one tab open
+let g:airline#extensions#tabline#enabled = 1
+" Set solarized theme
+let g:airline_theme='solarized'
 
 " Leader
 let mapleader = " "
