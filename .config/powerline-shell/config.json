@@ -1,0 +1,13 @@
+{
+  "segments": [
+    "cwd",
+    "git",
+    "jobs",
+    "root"
+  ],
+  "mode": "flat",
+  "cwd": {
+    "mode": "plain"
+  },
+  "theme":"solarized_dark"
+}
