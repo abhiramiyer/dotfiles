@@ -95,6 +95,7 @@ set ignorecase
 set smartcase
 nnoremap <C-l> :nohlsearch<CR><C-l>
 
+set hidden
 " Some options to experiment with
 " set cursorline
 " set autoread
