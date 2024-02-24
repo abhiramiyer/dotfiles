@@ -24,3 +24,5 @@
   rebase = true
 [rerere]
   enabled = true
+[core]
+	excludesfile = /home/aiyer/.gitignore
