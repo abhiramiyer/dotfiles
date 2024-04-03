@@ -65,6 +65,18 @@ call plug#end()
 set background=dark
 colorscheme solarized
 
+" Toggle background color with Ctrl + Shift + b
+nnoremap <C-S-b> :call ToggleBackground()<CR>
+
+" Function to toggle background color
+function! ToggleBackground()
+    if &background ==# 'dark'
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+
 " vim-airline settings
 let g:airline_theme='<theme>'
 " Automatically display all buffers when there's only one tab open
