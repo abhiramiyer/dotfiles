@@ -25,4 +25,18 @@
 [rerere]
   enabled = true
 [core]
-	excludesfile = /home/aiyer/.gitignore
+  excludesfile = /home/aiyer/.gitignore
+[commit]
+  verbose = true
+[merge]
+  conflictStyle = diff3
+  tool = vimdiff
+[rebase]
+  autoSquash = true
+  autoStash = true
+[diff]
+  algorithm = histogram
+[log]
+  date = iso
+[branch]
+  sort = -committerdate
