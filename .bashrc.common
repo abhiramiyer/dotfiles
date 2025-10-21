@@ -91,6 +91,8 @@ if [[ -x "$(command -v powerline-shell)" ]]; then
   fi
 else
   # fallback to simple colored prompt with git info if available
+  # Note: __git_ps1 is provided by git-prompt.sh that is usually sourced through 
+  # the bash completion system.
   if declare -F __git_ps1 >/dev/null; then
     # Git prompt configuration
     export GIT_PS1_SHOWDIRTYSTATE=1
