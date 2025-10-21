@@ -24,8 +24,8 @@ if [[ -d "$HOME/.local/bin" && ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
 fi
 
 HISTCONTROL=ignoreboth  # ignore duplicate lines or lines starting with space
-HISTSIZE=-1             # no size limit
-HISTFILESIZE=-1         # no size limit
+HISTSIZE=-1             # no size limit (bash 4.3+)
+HISTFILESIZE=-1         # no size limit (bash 4.3+)
 HISTTIMEFORMAT="%F %T " # %F -> YYYY-MM-DD, %T -> HH:MM:SS
 HISTIGNORE="&:ls:ll:la:pwd:exit:history:clear:cd:cd ..: cd ~:cd /:cd -"
 
