@@ -64,7 +64,18 @@ if [[ -x /usr/bin/dircolors ]]; then
   alias egrep='egrep --color=auto'
 fi
 
-# Alias definitions.
+# Alias definitions
+alias ll='ls -alFh'
+alias ltr='ll -tr'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias shfmt='shfmt -i 2 -ci'
+alias hg='history | grep'
+
 if [[ -f ~/.bash_aliases ]]; then
   . ~/.bash_aliases
 fi
